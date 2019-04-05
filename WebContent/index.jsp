@@ -5,108 +5,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Meadow - Buy plants and pots online</title>
-</head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 <style>
-body { margin:0; }
-
-#outer {
-	//border:1px solid white;
-	margin:0px auto;
-    padding: 0;
+.container-fluid{
+	background-color: #5cdb95;
 }
-/* Add a black background color to the top navigation bar */
-.topnav {
-  margin:0px auto;
-  padding: 0;
-  overflow: hidden;
-  background-color: #e9e9e9;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the "active" element to highlight the current page */
-.topnav a.active {
-  background-color: #2196F3;
-  color: white;
-}
-
-/* Style the search box inside the navigation bar */
-.topnav input[type=text] {
-  float: right;
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
-}
-
-/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav input[type=text] {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;
-  }
-}
-
-/*styling for search bar*/
-input[type=text] {
-  width: 140px;
-  height: 6%;
-  position: absolute;
-  right: 10%;
-  margin-top: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 25px;
-  border: 2px solid #73AD21;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-}
-
-/* When the input field gets focus, change its width to 100% */
-input[type=text]:focus {
-  width: 40%;
-}
-/*search bar styling ends */
-
-/* top header bar styling*/
-#top_header {
-  width: 100%;
-  background-color: #5cdb95;
-  height: 100px;
-}
-/* top header bar styling ends*/
-
 </style>
+	
+</head>
 <body>
-<div id="outer">
-<div id="top_header">
-	<input type="text" name="search" placeholder="Search Plants and Pots">
-</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Meadow</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+  <h3>Collapsible Navbar</h3>
+  <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+  <p>Only when the button is clicked, the navigation bar will be displayed.</p>
 </div>
 </body>
 </html>
