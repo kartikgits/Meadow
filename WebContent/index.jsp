@@ -11,15 +11,52 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <style>
-.container-fluid{
+
+#website_header{
+	font-size: 200%;
+	color: #edf5e1;
 	background-color: #5cdb95;
 }
+
+#website_header_internal{
+	padding: 20px;
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 6px;
+	font-size: 60%;
+	border: 0px solid;
+	border-radius: 20px;
+}
+
+#header_side_icons{
+	font-size: 80%;
+}
+
+#navigation_header{
+	background-color: #379683;
+}
+
+.navbar{
+	border: 0px;
+}
+
 </style>
 	
 </head>
 <body>
+<div class="container-fluid" id="website_header">
+	<div class="container" id="website_header_internal">
+		<span class="text-center col-sm-4" id="web_logo_substitute">Meadow</span>
+		<span class="text-center col-sm-4" id="search_n_cart"><input type="text" name="search" placeholder="Search Plants and Pots"></span>
+		<span class="text-center col-sm-4" id="header_side_icons">
+	        <a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a>
+		</span>
+	</div>
+</div>
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
+  <div class="container-fluid" id="navigation_header">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -42,18 +79,12 @@
         <li><a href="#">Page 2</a></li>
         <li><a href="#">Page 3</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
     </div>
   </div>
 </nav>
   
 <div class="container">
-  <h3>Collapsible Navbar</h3>
-  <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
-  <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+  Home page
 </div>
 </body>
 </html>
