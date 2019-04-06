@@ -19,19 +19,33 @@
 }
 
 #website_header_internal{
-	padding: 20px;
+	padding: 18px;
 }
 
 input[type=text] {
 	width: 100%;
 	padding: 6px;
 	font-size: 60%;
+	color: #212F3D;
 	border: 0px solid;
 	border-radius: 20px;
 }
 
-#header_side_icons{
+
+#header_side_icons {
+	padding-top: 5px;
+}
+
+#header_side_icons a{
 	font-size: 80%;
+}
+
+.my-effects{
+	color: #edf5e1;
+}
+
+.my-effects:hover{
+	color: white;
 }
 
 #navigation_header{
@@ -51,7 +65,8 @@ input[type=text] {
 		<span class="text-center col-sm-4" id="web_logo_substitute">Meadow</span>
 		<span class="text-center col-sm-4" id="search_n_cart"><input type="text" name="search" placeholder="Search Plants and Pots"></span>
 		<span class="text-center col-sm-4" id="header_side_icons">
-	        <a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a>
+	        <a href="#"><span class="glyphicon glyphicon-user my-effects">Account</span></a>
+	        <a href="#"><span class="glyphicon glyphicon-shopping-cart my-effects" style="margin-left: 10px;">Cart</span></a>
 		</span>
 	</div>
 </div>
