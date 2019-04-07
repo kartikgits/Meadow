@@ -12,6 +12,12 @@
 
 <style>
 
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
 #website_header{
 	font-size: 200%;
 	color: #edf5e1;
@@ -23,7 +29,7 @@
 }
 
 input[type=text] {
-	width: 100%;
+	width: 80%;
 	padding: 6px;
 	font-size: 60%;
 	color: #003300;
@@ -31,9 +37,18 @@ input[type=text] {
 	border-radius: 20px;
 }
 
+.glyphicon-search{
+}
+
+.glyphicon-search:hover{
+	color: white;
+}
+
+#search_n_cart{
+}
 
 #header_side_icons {
-	padding-top: 5px;
+	/*padding-top: 5px;*/
 }
 
 #header_side_icons a{
@@ -64,10 +79,10 @@ input[type=text] {
 	<div class="container" id="website_header_internal">
 		<span class="clearfix visible-lg-block visible-md-block visible-sm-block text-center col-sm-4" id="web_logo_substitute">Meadow</span>
 		<!-- Search bar for LG, MD and SM screens -->
-		<span class="text-center clearfix visible-lg-block visible-md-block visible-sm-block col-sm-4" id="search_n_cart"><input type="text" name="search" placeholder="Search Plants and Pots"></span>
+		<span class="text-center clearfix visible-lg-block visible-md-block visible-sm-block col-sm-4" id="search_n_cart"><input type="text" name="search" placeholder="Search Plants and Pots"><span class="glyphicon glyphicon-search vcenter"></span></span>
 		<!-- Search bar for XS screens -->
-		<span class="text-center clearfix visible-xs-block col-sm-4" id="search_n_cart"><input type="text" name="search" placeholder="Search Meadow"></span>
-		<span class="text-center col-sm-4" id="header_side_icons">
+		<span class="text-center clearfix visible-xs-block col-sm-4" id="search_n_cart"><input type="text" name="search" placeholder="Search Meadow"><span class="glyphicon glyphicon-search vcenter"></span></span>
+		<span class="text-center col-sm-4 vcenter" id="header_side_icons">
 	        <a href="#"><span class="glyphicon glyphicon-user my-effects">Account</span></a>
 	        <a href="#"><span class="glyphicon glyphicon-shopping-cart my-effects" style="margin-left: 10px;">Cart</span></a>
 		</span>
