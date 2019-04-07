@@ -26,7 +26,7 @@ input[type=text] {
 	width: 100%;
 	padding: 6px;
 	font-size: 60%;
-	color: #212F3D;
+	color: #003300;
 	border: 0px solid;
 	border-radius: 20px;
 }
@@ -62,8 +62,11 @@ input[type=text] {
 <body>
 <div class="container-fluid" id="website_header">
 	<div class="container" id="website_header_internal">
-		<span class="text-center col-sm-4" id="web_logo_substitute">Meadow</span>
-		<span class="text-center col-sm-4" id="search_n_cart"><input type="text" name="search" placeholder="Search Plants and Pots"></span>
+		<span class="clearfix visible-lg-block visible-md-block visible-sm-block text-center col-sm-4" id="web_logo_substitute">Meadow</span>
+		<!-- Search bar for LG, MD and SM screens -->
+		<span class="text-center clearfix visible-lg-block visible-md-block visible-sm-block col-sm-4" id="search_n_cart"><input type="text" name="search" placeholder="Search Plants and Pots"></span>
+		<!-- Search bar for XS screens -->
+		<span class="text-center clearfix visible-xs-block col-sm-4" id="search_n_cart"><input type="text" name="search" placeholder="Search Meadow"></span>
 		<span class="text-center col-sm-4" id="header_side_icons">
 	        <a href="#"><span class="glyphicon glyphicon-user my-effects">Account</span></a>
 	        <a href="#"><span class="glyphicon glyphicon-shopping-cart my-effects" style="margin-left: 10px;">Cart</span></a>
@@ -78,7 +81,7 @@ input[type=text] {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Meadow</a>
+      <a class="navbar-brand clearfix visible-xs-block" href="#">Meadow</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
