@@ -71,6 +71,16 @@ input[type=text] {
 	border: 0px;
 }
 
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
 </style>
 	
 </head>
@@ -100,24 +110,72 @@ input[type=text] {
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Page 1-1</a></li>
-            <li><a href="#">Page 1-2</a></li>
-            <li><a href="#">Page 1-3</a></li>
-          </ul>
+      
+      
+   <li class="dropdown">
+    <a class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials<span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">Trees<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">Tree 1</a></li>
+          <li><a tabindex="-1" href="#">Tree 2</a></li>
+          <li><a tabindex="-1" href="#">Tree 3</a></li>
+          <li><a tabindex="-1" href="#">Tree 4</a></li>
+        </ul>
+      </li>
+       <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">Shrubs<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">Shrub 1</a></li>
+          <li><a tabindex="-1" href="#">Shrub 2</a></li>
+          <li><a tabindex="-1" href="#">Shrub 3</a></li>
+          <li><a tabindex="-1" href="#">Shrub 4</a></li>
+        </ul>
+      </li>
+      <li><a tabindex="-1" href="#">Fruit Trees</a></li>
+      <li><a tabindex="-1" href="#">Home and Garden</a></li>
+      <li><a tabindex="-1" href="#">Veggies</a></li>
+    </ul>
+  </li>
+      
+      
+      
+      
+      
+     <!--   <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            
+	 
+	            <li><a href="#">Trees</a></li>
+	            <li><a href="#">Page 1-2</a></li>
+	            <li><a href="#">Page 1-3</a></li>
+	          </ul>
         </li>
+      -->
         <li><a href="#">Page 2</a></li>
         <li><a href="#">Page 3</a></li>
       </ul>
     </div>
+    
   </div>
 </nav>
   
 <div class="container">
   Home page
 </div>
+
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+
 </body>
 </html>
