@@ -113,7 +113,7 @@ input[type=text] {
       
       
    <li class="dropdown">
-    <a class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials<span class="caret"></span></a>
+    <a class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
     <ul class="dropdown-menu">
       <li class="dropdown-submenu">
         <a class="test" tabindex="-1" href="#">Trees<span class="caret"></span></a>
