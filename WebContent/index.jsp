@@ -133,8 +133,23 @@ input[type=text] {
           <li><a tabindex="-1" href="#">Shrub 4</a></li>
         </ul>
       </li>
-      <li><a tabindex="-1" href="#">Fruit Trees</a></li>
-      <li><a tabindex="-1" href="#">Home and Garden</a></li>
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">Fruit Trees<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">Fruit 1</a></li>
+          <li><a tabindex="-1" href="#">Fruit 2</a></li>
+          <li><a tabindex="-1" href="#">Fruit 3</a></li>
+          <li><a tabindex="-1" href="#">Fruit 4</a></li>
+        </ul>
+      </li>
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">Home and Garden<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">Fertilizers</a></li>
+          <li><a tabindex="-1" href="#">Tools</a></li>
+          <li><a tabindex="-1" href="#">lskd</a></li>
+        </ul>
+      </li>
       <li><a tabindex="-1" href="#">Veggies</a></li>
     </ul>
   </li>
@@ -154,8 +169,8 @@ input[type=text] {
 	          </ul>
         </li>
       -->
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
+        <li><a href="#">Garden Companion</a></li>
+        <li><a href="#">Special Offers</a></li>
       </ul>
     </div>
     
@@ -163,7 +178,7 @@ input[type=text] {
 </nav>
   
 <div class="container">
-  Home page
+  
 </div>
 
 
