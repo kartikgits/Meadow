@@ -81,6 +81,11 @@ input[type=text] {
   margin-top: -1px;
 }
 
+/*Styling for home page contents starts*/
+.side-panel-style{
+  border-radius: 20px;
+}
+
 </style>
 	
 </head>
@@ -109,76 +114,76 @@ input[type=text] {
       <a class="navbar-brand clearfix visible-xs-block" href="#">Meadow</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
       
-      
-   <li class="dropdown">
-    <a class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
-    <ul class="dropdown-menu">
-      <li class="dropdown-submenu">
-        <a class="test" tabindex="-1" href="#">Trees<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a tabindex="-1" href="#">Tree 1</a></li>
-          <li><a tabindex="-1" href="#">Tree 2</a></li>
-          <li><a tabindex="-1" href="#">Tree 3</a></li>
-          <li><a tabindex="-1" href="#">Tree 4</a></li>
-        </ul>
-      </li>
-       <li class="dropdown-submenu">
-        <a class="test" tabindex="-1" href="#">Shrubs<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a tabindex="-1" href="#">Shrub 1</a></li>
-          <li><a tabindex="-1" href="#">Shrub 2</a></li>
-          <li><a tabindex="-1" href="#">Shrub 3</a></li>
-          <li><a tabindex="-1" href="#">Shrub 4</a></li>
-        </ul>
-      </li>
-      <li class="dropdown-submenu">
-        <a class="test" tabindex="-1" href="#">Fruit Trees<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a tabindex="-1" href="#">Fruit 1</a></li>
-          <li><a tabindex="-1" href="#">Fruit 2</a></li>
-          <li><a tabindex="-1" href="#">Fruit 3</a></li>
-          <li><a tabindex="-1" href="#">Fruit 4</a></li>
-        </ul>
-      </li>
-      <li class="dropdown-submenu">
-        <a class="test" tabindex="-1" href="#">Home and Garden<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a tabindex="-1" href="#">Fertilizers</a></li>
-          <li><a tabindex="-1" href="#">Tools</a></li>
-          <li><a tabindex="-1" href="#">lskd</a></li>
-        </ul>
-      </li>
-      <li><a tabindex="-1" href="#">Veggies</a></li>
+   <ul class="nav navbar-nav">
+	   <li class="dropdown">
+	    <a class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
+	    <ul class="dropdown-menu">
+	      <li class="dropdown-submenu">
+	        <a class="test" tabindex="-1" href="#">Trees<span class="caret"></span></a>
+	        <ul class="dropdown-menu">
+	          <li><a tabindex="-1" href="#">Tree 1</a></li>
+	          <li><a tabindex="-1" href="#">Tree 2</a></li>
+	          <li><a tabindex="-1" href="#">Tree 3</a></li>
+	          <li><a tabindex="-1" href="#">Tree 4</a></li>
+	        </ul>
+	      </li>
+	       <li class="dropdown-submenu">
+	        <a class="test" tabindex="-1" href="#">Shrubs<span class="caret"></span></a>
+	        <ul class="dropdown-menu">
+	          <li><a tabindex="-1" href="#">Shrub 1</a></li>
+	          <li><a tabindex="-1" href="#">Shrub 2</a></li>
+	          <li><a tabindex="-1" href="#">Shrub 3</a></li>
+	          <li><a tabindex="-1" href="#">Shrub 4</a></li>
+	        </ul>
+	      </li>
+	      <li class="dropdown-submenu">
+	        <a class="test" tabindex="-1" href="#">Fruit Trees<span class="caret"></span></a>
+	        <ul class="dropdown-menu">
+	          <li><a tabindex="-1" href="#">Fruit 1</a></li>
+	          <li><a tabindex="-1" href="#">Fruit 2</a></li>
+	          <li><a tabindex="-1" href="#">Fruit 3</a></li>
+	          <li><a tabindex="-1" href="#">Fruit 4</a></li>
+	        </ul>
+	      </li>
+	      <li class="dropdown-submenu">
+	        <a class="test" tabindex="-1" href="#">Home and Garden<span class="caret"></span></a>
+	        <ul class="dropdown-menu">
+	          <li><a tabindex="-1" href="#">Fertilizers</a></li>
+	          <li><a tabindex="-1" href="#">Tools</a></li>
+	          <li><a tabindex="-1" href="#">lskd</a></li>
+	        </ul>
+      	</li>
+      	<li><a tabindex="-1" href="#">Veggies</a></li>
+    	</ul>
+  	</li>
+    <li><a href="#">Garden Companion</a></li>
+    <li><a href="#">Special Offers</a></li>
     </ul>
-  </li>
-      
-      
-      
-      
-      
-     <!--   <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories <span class="caret"></span></a>
-	          <ul class="dropdown-menu">
-	            
-	 
-	            <li><a href="#">Trees</a></li>
-	            <li><a href="#">Page 1-2</a></li>
-	            <li><a href="#">Page 1-3</a></li>
-	          </ul>
-        </li>
-      -->
-        <li><a href="#">Garden Companion</a></li>
-        <li><a href="#">Special Offers</a></li>
-      </ul>
-    </div>
+   </div>
     
   </div>
 </nav>
   
 <div class="container">
-  
+  <div class="row">
+    <div class="col-sm-3">
+       <div class="panel-group">	
+	    <div class="panel panel-success side-panel-style">
+	      <div class="panel-heading">Seasonal Favourites</div>
+	      <div class="panel-body"><a href="#">Fruits</a></div>
+	      <div class="panel-body"><a href="#">Flowers</a></div>
+	      <div class="panel-body"><a href="#">Roses</a></div>
+	      <div class="panel-body"><a href="#">Lawn Care</a></div>
+	      <div class="panel-body"><a href="#">Lawn Care</a></div>
+	      <div class="panel-body"><a href="#">Lawn Care</a></div>
+	      <div class="panel-body"><a href="#">Lawn Care</a></div>
+	    </div>
+       </div>
+    </div>
+    
+    <div class="col-sm-9" style="background-color:lavenderblush;">.col-sm-8</div>
+  </div>
 </div>
 
 
