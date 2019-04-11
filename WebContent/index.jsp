@@ -7,85 +7,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Meadow - Buy plants and pots online</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/title_and_nav.css">
+	<link rel="stylesheet" href="css/home_page.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
 <style>
-
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
+.carousel .item img {
+  max-height: 768px;
+  min-width: auto;
 }
 
-#website_header{
-	font-size: 200%;
-	color: #edf5e1;
-	background-color: #5cdb95;
+.center-block{
+  float: none;
 }
-
-#website_header_internal{
-	padding: 18px;
-}
-
-input[type=text] {
-	width: 80%;
-	padding: 6px;
-	font-size: 60%;
-	color: #003300;
-	border: 0px solid;
-	border-radius: 20px;
-}
-
-.glyphicon-search{
-}
-
-.glyphicon-search:hover{
-	color: white;
-}
-
-#search_n_cart{
-}
-
-#header_side_icons {
-	/*padding-top: 5px;*/
-}
-
-#header_side_icons a{
-	font-size: 80%;
-}
-
-.my-effects{
-	color: #edf5e1;
-}
-
-.my-effects:hover{
-	color: white;
-}
-
-#navigation_header{
-	background-color: #379683;
-}
-
-.navbar{
-	border: 0px;
-}
-
-.dropdown-submenu {
-  position: relative;
-}
-
-.dropdown-submenu .dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -1px;
-}
-
-/*Styling for home page contents starts*/
-.side-panel-style{
-  border-radius: 20px;
-}
-
 </style>
 	
 </head>
@@ -165,8 +99,10 @@ input[type=text] {
   </div>
 </nav>
   
+<!-- Home page contents start here-->
 <div class="container">
-  <div class="row">
+
+  <div class="row" style="margin-left: 0px;">
     <div class="col-sm-3">
        <div class="panel-group">	
 	    <div class="panel panel-success side-panel-style">
@@ -178,14 +114,55 @@ input[type=text] {
 	      <div class="panel-body"><a href="#">Lawn Care</a></div>
 	      <div class="panel-body"><a href="#">Lawn Care</a></div>
 	      <div class="panel-body"><a href="#">Lawn Care</a></div>
+	      <div class="panel-body"><a href="#">Lawn Care</a></div>
+	      <div class="panel-body"><a href="#">Lawn Care</a></div>
 	    </div>
        </div>
     </div>
     
-    <div class="col-sm-9" style="background-color:lavenderblush;">.col-sm-8</div>
+    
   </div>
+  
+  
+  <!-- Banner for delivery assurance, quality and nursery details -->
+  <div class="container" style="background-color: lavender;">
+  	<!-- flex 1 -->
+  	<div class="col-sm-4">
+       <div class="panel-group">	
+	    <div class="panel panel-success side-panel-style">
+	      <div class="panel-heading text-center">
+	      	Ground Delivery<br/>
+	      	At your door-step
+	      </div>
+	    </div>
+       </div>
+    </div>
+    <!-- flex 2 -->
+  	<div class="col-sm-4">
+       <div class="panel-group">	
+	    <div class="panel panel-success side-panel-style">
+	      <div class="panel-heading text-center">
+	      	<br/>
+	      	
+	      </div>
+	    </div>
+       </div>
+    </div>
+    <!-- flex 2 -->
+  	<div class="col-sm-4">
+       <div class="panel-group">	
+	    <div class="panel panel-success side-panel-style">
+	      <div class="panel-heading text-center">
+	      	Ground Delivery<br/>
+	      	At your door-step
+	      </div>
+	    </div>
+       </div>
+    </div>
+  </div>
+  
+  <!-- Home page contents end here-->
 </div>
-
 
 <script>
 $(document).ready(function(){
