@@ -102,7 +102,7 @@
 <!-- Home page contents start here-->
 <div class="container">
 
-  <div class="row" style="margin-left: 0px;">
+  <div class="row" >
     <div class="col-sm-3">
        <div class="panel-group">	
 	    <div class="panel panel-success side-panel-style">
@@ -120,6 +120,41 @@
        </div>
     </div>
     
+    	<div class="container col-sm-9" style="background-color: lavander;"> 
+		  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+		    <!-- Indicators -->
+		    <ol class="carousel-indicators">
+		      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		      <li data-target="#myCarousel" data-slide-to="1"></li>
+		      <li data-target="#myCarousel" data-slide-to="2"></li>
+		    </ol>
+		
+		    <!-- Wrapper for slides -->
+		    <div class="carousel-inner">
+		      <div class="item active">
+		        <img src="<%=request.getContextPath()%>/photos/slider/Slider1.jpg" alt="Image 1" style="width:100%;">
+		      </div>
+		
+		      <div class="item">
+		        <img src="<%=request.getContextPath()%>/photos/slider/Slider2.jpg" alt="Image 2" style="width:100%;">
+		      </div>
+		    
+		      <div class="item">
+		        <img src="<%=request.getContextPath()%>/photos/slider/Slider3.jpg" alt="Image 3" style="width:100%;">
+		      </div>
+		    </div>
+		
+		    <!-- Left and right controls -->
+		    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		      <span class="glyphicon glyphicon-chevron-left"></span>
+		      <span class="sr-only">Previous</span>
+		    </a>
+		    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+		      <span class="glyphicon glyphicon-chevron-right"></span>
+		      <span class="sr-only">Next</span>
+		    </a>
+		  </div>
+	</div>
     
   </div>
   
@@ -142,7 +177,7 @@
        <div class="panel-group">	
 	    <div class="panel panel-success side-panel-style">
 	      <div class="panel-heading text-center">
-	      	<br/>
+	      	Content goes here
 	      	
 	      </div>
 	    </div>
