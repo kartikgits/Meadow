@@ -20,6 +20,9 @@
 .center-block{
   float: none;
 }
+
+.footer {
+}
 </style>
 	
 </head>
@@ -157,10 +160,11 @@
 	</div>
     
   </div>
-  
-  
-  <!-- Banner for delivery assurance, quality and nursery details -->
-  <div class="container" style="background-color: lavender;">
+  <!-- Home page contents end here-->
+</div>
+
+<!-- Banner for delivery assurance, quality and nursery details -->
+  <div class="container-fluid jumbotron" style="margin-top: 10px; margin-bottom: 10px;">
   	<!-- flex 1 -->
   	<div class="col-sm-4">
        <div class="panel-group">	
@@ -195,9 +199,162 @@
        </div>
     </div>
   </div>
-  
-  <!-- Home page contents end here-->
+
+<div class="fluid-container">
+<div class="container">
+	<h2 class="text-center">Featured Plants</h2>
+	<div class="row">
+		<div class="col-sm-4">
+		  <div class="panel panel-primary">
+			<div class="panel-heading">BLACK FRIDAY DEAL</div>
+			<div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+			<div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+		  </div>
+		</div>
+		
+		<div class="col-sm-4">
+		  <div class="panel panel-primary">
+			<div class="panel-heading">BLACK FRIDAY DEAL</div>
+			<div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+			<div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+		  </div>
+		</div>
+		
+		<div class="col-sm-4">
+		  <div class="panel panel-primary">
+			<div class="panel-heading">BLACK FRIDAY DEAL</div>
+			<div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+			<div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+		  </div>
+		</div>
+	</div>
+	
+	
+	<div class="row">
+		<div class="col-sm-4">
+		  <div class="panel panel-primary">
+			<div class="panel-heading">BLACK FRIDAY DEAL</div>
+			<div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+			<div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+		  </div>
+		</div>
+		
+		<div class="col-sm-4">
+		  <div class="panel panel-primary">
+			<div class="panel-heading">BLACK FRIDAY DEAL</div>
+			<div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+			<div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+		  </div>
+		</div>
+		
+		<div class="col-sm-4">
+		  <div class="panel panel-primary">
+			<div class="panel-heading">BLACK FRIDAY DEAL</div>
+			<div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+			<div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+		  </div>
+		</div>
+	</div>
 </div>
+</div>
+
+<!-- Footer code -->
+<footer class="page-footer font-small blue pt-4" style="background-color: #05386B; color: #e7f2fe">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h4 class="text-uppercase"><b>Contact Information</b></h4>
+          <p class="text-uppercase">Address</p>
+          <address>Dehradun, Uttarakhand, India</address>
+          
+          <p class="text-uppercase">Phone</p>
+          <address>(+91) 7017147950</address>
+          
+          <p class="text-uppercase">Email</p>
+          <address><a href="mailto:kartik.kapparwan1@gmail.com">kartik.kapparwan1@gmail.com</a></address>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h4 class="text-uppercase">Resources</h4>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">About Us</a>
+              </li>
+              <li>
+                <a href="#!">Contact Us</a>
+              </li>
+              <li>
+                <a href="#!">Product Guarantee</a>
+              </li>
+              <li>
+                <a href="#!">Garden Companion</a>
+              </li>
+              
+              <li>
+                <a href="#!">Privacy Policy</a>
+              </li>
+              
+              <li>
+                <a href="#!">Terms & Conditions</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">Follow Us</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Facebook</a>
+              </li>
+              <li>
+                <a href="#!">Twitter</a>
+              </li>
+              <li>
+                <a href="#!">LinkedIn</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <!-- Edit it -->
+      <a href="http://localhost:8091/Meadow/">OurMeadow.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+
+<!-- Footer code ends -->
 
 <script>
 $(document).ready(function(){
