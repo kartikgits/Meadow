@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meadow - Buy plants and pots online</title>
+<title>OurMeadow - Buy plants and pots online</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/title_and_nav.css">
 	<link rel="stylesheet" href="css/home_page.css">
@@ -23,6 +23,10 @@
 
 .footer {
 }
+
+.resources-and-followus li a:hover{
+  color: white;
+}
 </style>
 	
 </head>
@@ -35,7 +39,10 @@
 		<!-- Search bar for XS screens -->
 		<span class="text-center clearfix visible-xs-block col-sm-4" id="search_n_cart"><input type="text" name="search" placeholder="Search Meadow"><span class="glyphicon glyphicon-search vcenter"></span></span>
 		<span class="text-center col-sm-4 vcenter" id="header_side_icons">
-	        <a href="#"><span class="glyphicon glyphicon-user my-effects">Account</span></a>
+		
+		<!-- just for test... consider removing it later -->
+		<% session.setAttribute("IS_LOGGEDIN", null); %>
+	        <a href="<%=request.getContextPath()%>/myprofile.jsp"><span class="glyphicon glyphicon-user my-effects">Account</span></a>
 	        <a href="#"><span class="glyphicon glyphicon-shopping-cart my-effects" style="margin-left: 10px;">Cart</span></a>
 		</span>
 	</div>
@@ -292,7 +299,7 @@
             <!-- Links -->
             <h4 class="text-uppercase">Resources</h4>
 
-            <ul class="list-unstyled">
+            <ul class="list-unstyled resources-and-followus">
               <li>
                 <a href="#!">About Us</a>
               </li>
@@ -324,7 +331,7 @@
             <!-- Links -->
             <h5 class="text-uppercase">Follow Us</h5>
 
-            <ul class="list-unstyled">
+            <ul class="list-unstyled resources-and-followus">
               <li>
                 <a href="#!">Facebook</a>
               </li>
