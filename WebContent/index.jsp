@@ -65,9 +65,16 @@ $(window, document, undefined).ready(function() {
 		<span class="text-center col-sm-4 vcenter" id="header_side_icons">
 		
 		<!-- just for test... consider removing it later -->
-		<!-- <% session.setAttribute("IS_LOGGEDIN", null); %> -->
-	    <!--    <a href="<%=request.getContextPath()%>/myprofile.jsp"><span class="glyphicon glyphicon-user my-effects">Account</span></a>	-->
-	        <a href="#signup" data-toggle="modal" data-target=".log-sign"><span class="glyphicon glyphicon-user my-effects">Account</span></a>
+		 <% session.setAttribute("IS_LOGGEDIN", null); %>
+		<!-- jsp code to check if a user is logged in or not -->
+			<!-- If the user is logged in, show his profile else open login/register modal -->
+			<% if(request.getSession().getAttribute("IS_LOGGEDIN") == null) {
+				out.print("<a href=\"#signup\" data-toggle=\"modal\" data-target=\".log-sign\"><span class=\"glyphicon glyphicon-user my-effects\">Account</span></a>");
+			}else { 
+				out.print("<a href=\""+ request.getContextPath() + "/myprofile.jsp" +"\"><span class=\"glyphicon glyphicon-user my-effects\">Account</span></a>");
+			}
+			%>
+	    
 	        <a href="#"><span class="glyphicon glyphicon-shopping-cart my-effects" style="margin-left: 10px;">Cart</span></a>
 		</span>
 	</div>
