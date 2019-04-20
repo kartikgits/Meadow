@@ -152,9 +152,9 @@ $(window, document, undefined).ready(function() {
     	</div>
        <div class="panel-group">	
 	    <div class="panel panel-success side-panel-style">
-	      <div class="panel-heading"><a href="#">My Orders</a></div>
+	      <div class="panel-heading"><a href="#"><b>My Orders ></b></a></div>
 	      <div class="panel-heading">Account Setting</div>
-	      <div class="panel-body"><a href="#">Profile Information</a></div>
+	      <div class="panel-body"><a href="#" onclick="check();">Profile Information</a></div>
 	      <div class="panel-body"><a href="#">Manage Addresses</a></div>
 	      <div class="panel-heading">My Stuff</div>
 	      <div class="panel-body"><a href="#">My Reviews & Ratings</a></div>
@@ -172,8 +172,8 @@ $(window, document, undefined).ready(function() {
        
     </div>
     
-    	<div class="container col-sm-9" style="background-color: lavander;"> 
-		  
+    <div class="container col-sm-9" style="background-color: lavander;" id="page_loading_div"> 
+    	
 	</div>
     
   </div>
@@ -278,6 +278,11 @@ $(window, document, undefined).ready(function() {
 
 <!-- Footer code ends -->
 
+<script>
+	function check(){
+		$('#page_loading_div').load('embeddedPages/profileInformation.jsp');
+	}
+</script>
 
 </body>
 </html>
