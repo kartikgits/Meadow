@@ -76,6 +76,15 @@ $(document).ready(function(){
 	$('#registrationForm #submitInfo').prop("disabled", true);
 	$('#registrationForm #resetInfo').prop("disabled", true);
 });
+
+
+$(function(){
+    $("#addressForm").hide();
+    
+    $("#add_address").on("click", function(){
+	    $("#addressForm").toggle(500);
+	}); 
+});
 </script>
 	
 </head>
@@ -287,21 +296,91 @@ $(document).ready(function(){
              
              <div class="tab-pane" id="messages">
                
-               <h2></h2>
-               
-               <ul class="list-group">
-                  <li class="list-group-item text-muted">Inbox</li>
-                  <li class="list-group-item text-right"><a href="#" class="pull-left">Here is your a link to the latest summary report from the..</a> 2.13.2014</li>
-                  <li class="list-group-item text-right"><a href="#" class="pull-left">Hi Joe, There has been a request on your account since that was..</a> 2.11.2014</li>
-                  <li class="list-group-item text-right"><a href="#" class="pull-left">Nullam sapien massaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
-                  <li class="list-group-item text-right"><a href="#" class="pull-left">Thllam sapien massaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
-                  <li class="list-group-item text-right"><a href="#" class="pull-left">Wesm sapien massaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
-                  <li class="list-group-item text-right"><a href="#" class="pull-left">For therepien massaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
-                  <li class="list-group-item text-right"><a href="#" class="pull-left">Also we, havesapien massaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
-                  <li class="list-group-item text-right"><a href="#" class="pull-left">Swedish chef is assaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
-                  
-                </ul> 
-               
+                <table>
+					<tr>
+						<th id="sub_title">Manage Addresses</th>
+					</tr>
+					<tr>
+						<td class=".text-uppercase" id="add_address"><a>+ Add a new address</a></td>
+					</tr>
+				</table>
+               <form class="form" action="##" method="post" id="addressForm">
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                            <label for="name"><h4>Name</h4></label>
+                          	<input type="textarea" class="form-control" id="name" placeholder="Enter name" name="name" title="Enter recipient's name">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                            <label for="last_name"><h4>Phone Number</h4></label>
+                          	<input type="textfield" class="form-control" id="phone" placeholder="Phone number" name="phone" title="Enter recipeint's phone">
+                          </div>
+                      </div>
+          
+                      <div class="form-group">
+                          <div class="col-xs-6">
+                             <label for="mobile"><h4>Pincode</h4></label>
+                             <input type="number" class="form-control" id="pincode" placeholder="Enter pincode" name="pincode" title="Enter valid pincode number">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                              <label for="locality"><h4>Locality</h4></label>
+                              <input type="textarea" class="form-control" id="locality" placeholder="Enter locality" name="locality" title="Enter colony or area name">
+                          </div>
+                      </div>
+                      
+                      <div class="form-group">
+                          
+                          <div class="col-xs-12">
+                              <label for=""><h4>Address(Area & Street)</h4></label>
+                              <input type="textarea" class="form-control" id="address" placeholder="Address(Area & Street)" name="address" title="Enter larger area and street name">
+                          </div>
+                      </div>
+                      
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                            <label for="city"><h4>City/District/Town</h4></label>
+                              <input type="textarea" class="form-control" id="city" placeholder="City/District/Town" name="city" title="Enter city/district/town name">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                            <label for="state"><h4>State</h4></label>
+                              <input type="textarea" class="form-control" id="state" placeholder="State" name="state" title="Enter State/UT name">
+                          </div>
+                      </div>
+                      
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                            <label for="landmark"><h4>Landmark</h4></label>
+                              <input type="textarea" class="form-control" id="landmark" placeholder="Landmark" name="landmark" title="Enter any nearby famous building/monument/park etc.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                            <label for="phone2"><h4>Phone 2 (optional)</h4></label>
+                              <input type="textarea" class="form-control" id="phone2" placeholder="Phone 2" name="phone2" title="Enter optional second phone number">
+                          </div>
+                      </div>
+                      
+                      <div class="form-group">
+                           <div class="col-xs-6">
+                                <br>
+                              	<button class="btn btn-lg btn-success" type="submit" id="submitInfo"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                               	<button class="btn btn-lg" type="reset" id="resetInfo"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                            </div>
+                      </div>
+              	</form>		
+                              
              </div><!--/tab-pane-->
              <div class="tab-pane" id="settings">
              
