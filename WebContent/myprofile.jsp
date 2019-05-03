@@ -221,15 +221,15 @@ $(function(){
     	<div class="col-sm-9">
           
           <ul class="nav nav-tabs" id="myTab">
-            <li class="active"><a href="#home" data-toggle="tab">Personal Information</a></li>
-            <li><a href="#messages" data-toggle="tab">Manage Addresses</a></li>
-            <li><a href="#settings" data-toggle="tab">Reviews & Ratings</a></li>
+            <li class="active"><a href="#personalInfo" data-toggle="tab">Personal Information</a></li>
+            <li><a href="#manageAddresses" data-toggle="tab">Manage Addresses</a></li>
+            <li><a href="#reviewsNRates" data-toggle="tab">Reviews & Ratings</a></li>
             <li><a href="#wishlist" data-toggle="tab">Wishlist</a></li>
             <li><a href="#orders" data-toggle="tab">Orders</a></li>
           </ul>
               
           <div class="tab-content">
-            <div class="tab-pane active" id="home">
+            <div class="tab-pane active" id="personalInfo">
               
               
               <hr>
@@ -294,7 +294,7 @@ $(function(){
               
              </div><!--/tab-pane-->
              
-             <div class="tab-pane" id="messages">
+             <div class="tab-pane" id="manageAddresses">
                
                 <table>
 					<tr>
@@ -382,7 +382,7 @@ $(function(){
               	</form>		
                               
              </div><!--/tab-pane-->
-             <div class="tab-pane" id="settings">
+             <div class="tab-pane" id="reviewsNRates">
              
              <hr>
              <div class="table-responsive">
@@ -491,6 +491,37 @@ $(function(){
                     </tr>
                   </tbody>
                 </table>
+                <hr>
+                <div class="row">
+                  <div class="col-md-4 col-md-offset-4 text-center">
+                  	<ul class="pagination" id="myPager"></ul>
+                  </div>
+                </div>
+              </div><!--/table-resp-->
+               	
+              </div>
+              
+              <div class="tab-pane" id="wishlist">
+             
+             <hr>
+             <div class="table-responsive">
+                Wish-list
+                <hr>
+                <div class="row">
+                  <div class="col-md-4 col-md-offset-4 text-center">
+                  	<ul class="pagination" id="myPager"></ul>
+                  </div>
+                </div>
+              </div><!--/table-resp-->
+               	
+              </div>
+              
+              
+              <div class="tab-pane" id="orders">
+             
+             <hr>
+             <div class="table-responsive">
+                Orders
                 <hr>
                 <div class="row">
                   <div class="col-md-4 col-md-offset-4 text-center">
