@@ -13,6 +13,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <style>
+
 .carousel .item img {
   max-height: 768px;
   min-width: auto;
@@ -57,15 +58,15 @@ $(window, document, undefined).ready(function() {
 <body>
 <div class="container-fluid" id="website_header">
 	<div class="container" id="website_header_internal">
-		<span class="clearfix visible-lg-block visible-md-block visible-sm-block text-center col-sm-4" id="web_logo_substitute">Meadow</span>
+		<div class="visible-lg-block visible-md-block visible-sm-block text-center col-sm-4" id="web_logo_substitute"><img src="<%=request.getContextPath()%>/photos/logos/logo_white.png" class="img-responsive" alt="Meadow" style="max-width:60%"></div>
 		<!-- Search bar for LG, MD and SM screens -->
-		<span class="text-center clearfix visible-lg-block visible-md-block visible-sm-block col-sm-4" id="search_n_cart"><input type="text" name="search" placeholder="Search Plants and Pots"><span class="glyphicon glyphicon-search vcenter"></span></span>
+		<div class="text-center visible-lg-block visible-md-block visible-sm-block col-sm-4" id="search_n_cart"><input type="text" name="search" placeholder="Search Plants and Pots"><span class="glyphicon glyphicon-search vcenter"></span></div>
 		<!-- Search bar for XS screens -->
-		<span class="text-center clearfix visible-xs-block col-sm-4" id="search_n_cart"><input type="text" name="search" placeholder="Search Meadow"><span class="glyphicon glyphicon-search vcenter"></span></span>
-		<span class="text-center col-sm-4 vcenter" id="header_side_icons">
+		<div class="text-center visible-xs-block col-sm-4" id="search_n_cart"><input type="text" name="search" placeholder="Search Meadow"><span class="glyphicon glyphicon-search vcenter"></span></div>
+		<div class="text-center col-sm-4 vcenter" id="header_side_icons">
 		
 		<!-- just for test... consider removing it later -->
-		 <% session.setAttribute("IS_LOGGEDIN", "negiji"); %>
+		 <% session.setAttribute("IS_LOGGEDIN", null); %>
 		<!-- jsp code to check if a user is logged in or not -->
 			<!-- If the user is logged in, show his profile else open login/register modal -->
 			<% if(request.getSession().getAttribute("IS_LOGGEDIN") == null) {
@@ -76,7 +77,7 @@ $(window, document, undefined).ready(function() {
 			%>
 	    
 	        <a href="#"><span class="glyphicon glyphicon-shopping-cart my-effects" style="margin-left: 10px;">Cart</span></a>
-		</span>
+		</div>
 	</div>
 </div>
 <nav class="navbar navbar-inverse">
