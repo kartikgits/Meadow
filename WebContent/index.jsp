@@ -4,13 +4,21 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OurMeadow - Buy plants and pots online</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/title_and_nav.css">
 	<link rel="stylesheet" href="css/home_page.css">
 	<link rel="stylesheet" href="css/login_and_register.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="css/navbar/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="css/navbar/animate.css" rel="stylesheet">
+    <link href="css/navbar/bootsnav.css" rel="stylesheet">
+    <link href="css/navbar/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <style>
 

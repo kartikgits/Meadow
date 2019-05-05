@@ -4,44 +4,21 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<meta name="description" content="">
+<meta name="keywords" content="">
 <title>My Profile</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/title_and_nav.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" id="bootstrap-css">
 	<link rel="stylesheet" href="css/home_page.css">
 	<link rel="stylesheet" href="css/login_and_register.css">
+	<link href="css/navbar/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="css/navbar/animate.css" rel="stylesheet">
+    <link href="css/navbar/bootsnav.css" rel="stylesheet">
+    <link href="css/navbar/style.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-<style>
-
-.center-block{
-  float: none;
-}
-
-.footer {
-}
-
-.resources-and-followus li a:hover{
-  color: white;
-}
-
-table {
-    border-collapse: collapse;
-}
-
-td,th {
-    padding-top: .5em;
-    padding-bottom: .5em;
-}
-
-#data{
-	color: #757575;
-}
-
-#sub_title{
-	font-size: 140%;
-}
-</style>
 
 <script type="text/javascript">
 //Script for modal box open/close/response
@@ -89,95 +66,199 @@ $(function(){
 	
 </head>
 <body>
-<div class="container-fluid" id="website_header">
-	<div class="container" id="website_header_internal">
-		<span class="clearfix visible-lg-block visible-md-block visible-sm-block text-center col-sm-4" id="web_logo_substitute">Meadow</span>
-		<!-- Search bar for LG, MD and SM screens -->
-		<span class="text-center clearfix visible-lg-block visible-md-block visible-sm-block col-sm-4" id="search_n_cart"><input type="text" name="search" placeholder="Search Plants and Pots"><span class="glyphicon glyphicon-search vcenter"></span></span>
-		<!-- Search bar for XS screens -->
-		<span class="text-center clearfix visible-xs-block col-sm-4" id="search_n_cart"><input type="text" name="search" placeholder="Search Meadow"><span class="glyphicon glyphicon-search vcenter"></span></span>
-		<span class="text-center col-sm-4 vcenter" id="header_side_icons">
-		
-		<!-- just for test... consider removing it later -->
-		 <% session.setAttribute("IS_LOGGEDIN", "negiji"); %>
-		<!-- jsp code to check if a user is logged in or not -->
-			<!-- If the user is logged in, show his profile else open login/register modal -->
-			<% if(request.getSession().getAttribute("IS_LOGGEDIN") == null) {
-				out.print("<a href=\"#signup\" data-toggle=\"modal\" data-target=\".log-sign\"><span class=\"glyphicon glyphicon-user my-effects\">Login/Signup</span></a>");
-			}else { 
-				out.print("<a href=\""+ request.getContextPath() + "/myprofile.jsp" +"\"><span class=\"glyphicon glyphicon-user my-effects\">Account</span></a>");
-			}
-			%>
-	    
-	        <a href="#"><span class="glyphicon glyphicon-shopping-cart my-effects" style="margin-left: 10px;">Cart</span></a>
-		</span>
-	</div>
-</div>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid" id="navigation_header">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand clearfix visible-xs-block" href="#">Meadow</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      
-   <ul class="nav navbar-nav">
-	   <li class="dropdown">
-	    <a class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
-	    <ul class="dropdown-menu">
-	      <li class="dropdown-submenu">
-	        <a class="test" tabindex="-1" href="#">Trees<span class="caret"></span></a>
-	        <ul class="dropdown-menu">
-	          <li><a tabindex="-1" href="#">Tree 1</a></li>
-	          <li><a tabindex="-1" href="#">Tree 2</a></li>
-	          <li><a tabindex="-1" href="#">Tree 3</a></li>
-	          <li><a tabindex="-1" href="#">Tree 4</a></li>
-	        </ul>
-	      </li>
-	       <li class="dropdown-submenu">
-	        <a class="test" tabindex="-1" href="#">Shrubs<span class="caret"></span></a>
-	        <ul class="dropdown-menu">
-	          <li><a tabindex="-1" href="#">Shrub 1</a></li>
-	          <li><a tabindex="-1" href="#">Shrub 2</a></li>
-	          <li><a tabindex="-1" href="#">Shrub 3</a></li>
-	          <li><a tabindex="-1" href="#">Shrub 4</a></li>
-	        </ul>
-	      </li>
-	      <li class="dropdown-submenu">
-	        <a class="test" tabindex="-1" href="#">Fruit Trees<span class="caret"></span></a>
-	        <ul class="dropdown-menu">
-	          <li><a tabindex="-1" href="#">Fruit 1</a></li>
-	          <li><a tabindex="-1" href="#">Fruit 2</a></li>
-	          <li><a tabindex="-1" href="#">Fruit 3</a></li>
-	          <li><a tabindex="-1" href="#">Fruit 4</a></li>
-	        </ul>
-	      </li>
-	      <li class="dropdown-submenu">
-	        <a class="test" tabindex="-1" href="#">Home and Garden<span class="caret"></span></a>
-	        <ul class="dropdown-menu">
-	          <li><a tabindex="-1" href="#">Fertilizers</a></li>
-	          <li><a tabindex="-1" href="#">Tools</a></li>
-	          <li><a tabindex="-1" href="#">lskd</a></li>
-	        </ul>
-      	</li>
-      	<li><a tabindex="-1" href="#">Veggies</a></li>
-    	</ul>
-  	</li>
-    <li><a href="#">Garden Companion</a></li>
-    <li><a href="#">Special Offers</a></li>
-    </ul>
-   </div>
-    
-  </div>
-</nav>
 
+<!-- Navigation bar code goes here -->
+
+   <!-- Start Navigation -->
+    <nav class="navbar navbar-default navbar-sticky navbar-scrollspy bootsnav" style="background-color: #5CDB95">
+
+        <!-- Start Top Search -->
+        <div class="top-search">
+            <div class="container">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                </div>
+            </div>
+        </div>
+        <!-- End Top Search -->
+
+        <div class="container">            
+            <!-- Start Atribute Navigation -->
+            <div class="attr-nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+                            <i class="fa fa-shopping-bag"></i>
+                            <span class="badge">3</span>
+                        </a>
+                        <ul class="dropdown-menu cart-list">
+                            <li>
+                                <a href="#" class="photo"><img src="images/thumb/thumb01.jpg" class="cart-thumb" alt="" /></a>
+                                <h6><a href="#">Delica omtantur </a></h6>
+                                <p>2x - <span class="price">$99.99</span></p>
+                            </li>
+                            <li>
+                                <a href="#" class="photo"><img src="images/thumb/thumb02.jpg" class="cart-thumb" alt="" /></a>
+                                <h6><a href="#">Omnes ocurreret</a></h6>
+                                <p>1x - <span class="price">$33.33</span></p>
+                            </li>
+                            <li>
+                                <a href="#" class="photo"><img src="images/thumb/thumb03.jpg" class="cart-thumb" alt="" /></a>
+                                <h6><a href="#">Agam facilisis</a></h6>
+                                <p>2x - <span class="price">$99.99</span></p>
+                            </li>
+                            <li class="total">
+                                <span class="pull-right"><strong>Total</strong>: $0.00</span>
+                                <a href="#" class="btn btn-default btn-cart">Cart</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
+                </ul>
+            </div>
+            <!-- End Atribute Navigation -->
+
+            <!-- Start Header Navigation -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#brand"><img src=<%out.print(""+request.getContextPath() + "/photos/logos/brand_logo_color.png");%> class="logo" alt="OurMeadow"></a>
+            </div>
+            <!-- End Header Navigation -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="dropdown megamenu-fw">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories</a>
+                        <ul class="dropdown-menu megamenu-content" role="menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-menu col-md-3">
+                                        <h6 class="title">Title Menu One</h6>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                    <div class="col-menu col-md-3">
+                                        <h6 class="title">Title Menu Two</h6>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                    <div class="col-menu col-md-3">
+                                        <h6 class="title">Title Menu Three</h6>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>    
+                                    <div class="col-menu col-md-3">
+                                        <h6 class="title">Title Menu Four</h6>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                </div><!-- end row -->
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Varities</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Custom Menu</a></li>
+                            <li><a href="#">Custom Menu</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Sub Menu</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Sub Menu</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Custom Menu</a></li>
+                            <li><a href="#">Custom Menu</a></li>
+                            <li><a href="#">Custom Menu</a></li>
+                            <li><a href="#">Custom Menu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">My Account</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>   
+
+        <!-- Start Side Menu -->
+        <div class="side">
+            <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+            <div class="widget">
+                <h6 class="title">Custom Pages</h6>
+                <ul class="link">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="widget">
+                <h6 class="title">Additional Links</h6>
+                <ul class="link">
+                    <li><a href="#">Retina Homepage</a></li>
+                    <li><a href="#">New Page Examples</a></li>
+                    <li><a href="#">Parallax Sections</a></li>
+                    <li><a href="#">Shortcode Central</a></li>
+                    <li><a href="#">Ultimate Font Collection</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Side Menu -->
+    </nav>
+    <!-- End Navigation -->
+
+<!-- Navbar code ends -->
 
 <div class="container">
-
 
 <hr>
 <div class="container">
@@ -230,10 +311,7 @@ $(function(){
               
           <div class="tab-content">
             <div class="tab-pane active" id="personalInfo">
-              
-              
               <hr>
-              
               <input
 			    id="editInfo"
 			    name="editInfo"
@@ -295,7 +373,7 @@ $(function(){
              </div><!--/tab-pane-->
              
              <div class="tab-pane" id="manageAddresses">
-               
+               	<hr>
                 <table>
 					<tr>
 						<th id="sub_title">Manage Addresses</th>
@@ -640,6 +718,14 @@ $(function(){
   </footer>
 
 <!-- Footer code ends -->
+
+
+<!-- START JAVASCRIPT -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+    
+<!-- Bootsnavs -->
+<script src="js/bootsnav.js"></script>
 
 <script>
 /* pagination */
